@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSONPlaceholder API Tester</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>JSONPlaceholder API Tester</h1>
+    
+    <div>
+        <h3>Select Request Method</h3>
+
+        <div class="radioGroup">
+            <input type="radio" id="get" name="request" value="GET" checked>
+            <label for="get">GET</label>
+            <input type="radio" id="post" name="request" value="POST">
+            <label for="post">POST</label>
+            <input type="radio" id="put" name="request" value="PUT">
+            <label for="put">PUT</label>
+            <input type="radio" id="patch" name="request" value="PATCH">
+            <label for="patch">PATCH</label>
+            <input type="radio" id="delete" name="request" value="DELETE">
+            <label for="delete">DELETE</label>
+        </div>
+
+        <div class="fieldGroup">
+            <label class=IDlabel for="a1" id="a1">ID</label>
+            <input class=IDinput name="fieldName" type="number" id="a1" minlength="1">
+            <label class=namelabel for="a2" id="a2">name</label>
+            <input disabled class=nameinput name="fieldName" type="text" id="a2">
+            <label class=usernamelabel for="a3" id="a3">username</label>
+            <input disabled class=usernameinput name="fieldName" type="text" id="a3">
+            <label class=emaillabel for="a4" id="a4">email</label>
+            <input disabled class=emailinput name="fieldName" type="email" id="a4"> <hr> 
+            <label class=address for="a5">Address</label> <br>
+            <label class=streetlabel for="inputstreet" id="a5">street</label>
+            <input disabled class=streetinput name="fieldName" type="text" id="a5">
+            <label class=suitelabel for="inputsuite" id="a6">suite</label>
+            <input disabled class=suiteinput name="fieldName" type="text" id="a6">
+            <label class=citylabel for="inputcity" id="a7">city</label>
+            <input disabled class=cityinput name="fieldName" type="text" id="a7">
+            <label class=zipcodelabel for="inputzipcode" id="a8">zipcode</label>
+            <input disabled class=zipcodeinput name="fieldName" type="text" id="a8"> <br>
+            <label class=geo for="a9">Geo</label> <br>
+            <label class=latlabel for="inputlat" id="a9">lat</label>
+            <input disabled class=latinput name="fieldName" type="number" id="a9">
+            <label class=lnglabel for="inputlng" id="a10">lng</label>
+            <input disabled class=lnginput name="fieldName" type="number" id="a10"> <hr>
+            <label class=phonelabel for="inputphone" id="a11">phone</label>
+            <input disabled class=phoneinput name="fieldName" type="tel" id="a11">
+            <label class=websitelabel for="inputwebsite" id="a12">website</label>
+            <input disabled class=websiteinput name="fieldName" type="url" id="a12"> <hr>
+            <label class=company for="a13">Company</label> <br>
+            <label class=cnamelabel for="inputcname" id="a13">name</label>
+            <input disabled class=cnameinput name="fieldName" type="text" id="a13"> <br>
+            <label class=catchPhraselabel for="inputcatchPhrase" id="a14">catch phrase</label>
+            <input disabled class=catchPhraseinput name="fieldName" type="text" id="a14"> <br>
+            <label class=bslabel for="inputbs" id="a15">bs</label>
+            <input disabled class=bsinput name="fieldName" type="text" id="a15">
+        </div>
+    
+        <button id="myButton">Send Request</button>
+    </div>
+
+    <div class="responsesection">
+        <h3>Result</h3>
+        <textarea id="response" readonly></textarea>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
